@@ -1,0 +1,133 @@
+@import "_fonts.scss";
+@import "_vars.scss";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*, 
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+body {
+	min-width: 320px;
+  overflow-x: hidden;
+  height: 100%;
+  font-weight: 500;
+  font-family: 'GilroyMedium';
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 40px;
+  font-weight: 900;
+  padding: 26px 0 28px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: 'GilroyBlack';
+  line-height: 24px;
+  cursor: pointer;
+
+  @media (max-width:992px) {
+    font-size: 16px;
+    width: 288px;
+    padding: 18px 0;
+  }
+}
+
+.btn-connect {
+  background-color: #fff;
+  border: 4px solid #2E9ADB;
+  width: 350px;
+  color: #2E9ADB;
+  transition: all .3s;
+  &:hover {
+    border: 4px solid rgba(#2E9ADB, .8);
+    background-color: rgba(#2E9ADB, .8);
+    color: #fff;
+  }
+
+  @media (max-width:992px) {
+    font-size: 16px;
+    width: 256px;
+    padding: 18px 0;
+  }
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+
+.btn-green {
+  background: #55B570;
+}
+
+.btn-blue {
+  background: #2E9ADB;
+}
+
+.form__input {
+  width: 100%;
+  max-width: 350px;
+  display: inline-block;
+  background: #FFFFFF;
+  border-radius: 40px;
+  border: none;
+  padding: 28px 30px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  &::placeholder {
+    font-family: 'GilroyMedium';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: rgba(126, 126, 126, 0.5);
+  }
+}
+
+.form__lineinput {
+  width: 730px;
+  display: inline-block;
+  background: #FFFFFF;
+  border-radius: 40px;
+  border: none;
+  padding: 28px 30px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  &::placeholder {
+    font-family: 'GilroyMedium';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: rgba(126, 126, 126, 0.5);
+  }
+
+  @media (max-width:940px) {
+    width: 100%;
+  }
+}
+

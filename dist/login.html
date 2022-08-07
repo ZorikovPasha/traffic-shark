@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header advert-header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src="images/logo.png" alt="">
+        </a>
+        <div class="header__category">
+          <a class="header__category-link" href="developers.html">Developers</a>
+          <a class="header__category-link" href="advert.html">Advertisers</a>
+        </div>
+        <div class="header__actions">
+          <div class="header__enter">
+            <a class="header__enter-link" href="login.html">Sign In</a>
+            <span>|</span>
+            <a class="header__enter-link" href="signup.html">Sign Up</a>
+          </div>
+          <div class="header__toggle-lang">
+            <label class="toggle">
+              <input class="toggle__real" type="checkbox" name="language">
+              <span class="toggle__fake">
+                <span class="toggle__fake-ru">RU</span>
+                <span class="toggle__fake-en">EN</span>
+              </span>
+            </label>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="main__content">
+      <h1 class="main__title">Sign In</h1>
+      <form class="main__form" data-login-form>
+        <input class="main__form-input form__input" name="email" type="email" placeholder="E-mail">
+        <input class="main__form-input form__input" name="password" type="password" placeholder="Password">
+        <button 
+          class="main__form-btn btn top__choice-link" 
+          type="submit"
+          data-login-submit
+        >
+          Sign In
+        </button>
+        <label class="main__form-toggle form-toggle">
+          <input class="form-toggle__real" type="checkbox" name="remember">
+          <span class="form-toggle__fake"></span>
+          <span class="form-toggle__text">Remember me</span>
+        </label>
+      </form>
+      <div class="main__links">
+        <a class="main__link" href="#">Forgot password?</a>
+        <a class="main__link" href="signup.html">Create an account</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
